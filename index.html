@@ -1628,11 +1628,28 @@
     }
   })();
 </script>
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    <!-- 👇 여기에 추가 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === "#demo") {
+          const target = document.querySelector("#demo");
+          if (target) {
+            setTimeout(() => {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 500);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
 
 
 </body>
 
 </html>
+
 
 
 
